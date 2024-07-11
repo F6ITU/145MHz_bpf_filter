@@ -707,6 +707,16 @@
 	)
 	(wire
 		(pts
+			(xy 61.468 67.056) (xy 61.468 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1977bd64-dfbd-4847-bfb5-807698efde67")
+	)
+	(wire
+		(pts
 			(xy 78.232 50.8) (xy 78.232 52.324)
 		)
 		(stroke
@@ -744,6 +754,16 @@
 			(type default)
 		)
 		(uuid "9d623c19-8f72-43d2-a972-11d23196d2d7")
+	)
+	(wire
+		(pts
+			(xy 75.692 65.532) (xy 75.692 67.056)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b6454494-a2f1-4436-92b1-9da848dcebc2")
 	)
 	(wire
 		(pts
@@ -793,7 +813,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_Wire:SolderWire-0.1sqmm_1x02_P3.6mm_D0.4mm_OD1mm"
+		(property "Footprint" "Connector_Coaxial:MMCX_Molex_73415-1471_Vertical"
 			(at 83.312 48.26 0)
 			(effects
 				(font
@@ -836,6 +856,139 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:Conn_01x01_Socket")
+		(at 66.548 67.056 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "18e64043-49c0-4ea1-b99c-404f9cf9a8f3")
+		(property "Reference" "J5"
+			(at 67.2592 65.8438 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x01_Socket"
+			(at 67.2592 68.2681 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "SolderWire-0.1sqmm_1x01_D0.4mm_OD1mm"
+			(at 66.548 67.056 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 66.548 67.056 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated"
+			(at 66.548 67.056 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0817c87c-902c-4309-b561-488aebbd4304")
+		)
+		(instances
+			(project "145MHz_BPF"
+				(path "/400861fc-cbc3-4ec9-a9e3-afcce8493da3"
+					(reference "J5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 75.692 67.056 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3abc2ca9-c4c5-424a-b082-b8d69cece753")
+		(property "Reference" "#PWR05"
+			(at 75.692 73.406 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 75.692 71.1891 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 75.692 67.056 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 75.692 67.056 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 75.692 67.056 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "57287915-f149-4901-bed7-f6fc0ee25800")
+		)
+		(instances
+			(project "145MHz_BPF"
+				(path "/400861fc-cbc3-4ec9-a9e3-afcce8493da3"
+					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:Conn_01x02_Socket")
 		(at 50.038 48.26 0)
 		(mirror y)
@@ -863,7 +1016,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_Wire:SolderWire-0.1sqmm_1x02_P3.6mm_D0.4mm_OD1mm"
+		(property "Footprint" "Connector_Coaxial:MMCX_Molex_73415-1471_Vertical"
 			(at 50.038 48.26 0)
 			(effects
 				(font
@@ -900,6 +1053,73 @@
 			(project "145MHz_BPF"
 				(path "/400861fc-cbc3-4ec9-a9e3-afcce8493da3"
 					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x01_Socket")
+		(at 80.772 65.532 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "48017850-6988-4890-a706-398dda6ef73d")
+		(property "Reference" "J4"
+			(at 81.4832 64.3198 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x01_Socket"
+			(at 81.4832 66.7441 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "SolderWire-0.1sqmm_1x01_D0.4mm_OD1mm"
+			(at 80.772 65.532 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 80.772 65.532 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated"
+			(at 80.772 65.532 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9971c9b4-53e6-4f92-baa3-0139a218f305")
+		)
+		(instances
+			(project "145MHz_BPF"
+				(path "/400861fc-cbc3-4ec9-a9e3-afcce8493da3"
+					(reference "J4")
 					(unit 1)
 				)
 			)
@@ -1118,6 +1338,72 @@
 			(project "145MHz_BPF"
 				(path "/400861fc-cbc3-4ec9-a9e3-afcce8493da3"
 					(reference "#PWR04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 61.468 68.58 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ad787f82-0cd3-4617-8916-d4dda019100f")
+		(property "Reference" "#PWR06"
+			(at 61.468 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 61.468 72.7131 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 61.468 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 61.468 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 61.468 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c3ac22ab-18e5-4a19-b30e-8afc9f161af1")
+		)
+		(instances
+			(project "145MHz_BPF"
+				(path "/400861fc-cbc3-4ec9-a9e3-afcce8493da3"
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
